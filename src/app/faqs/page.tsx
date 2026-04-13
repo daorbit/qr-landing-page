@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Mail } from "lucide-react";
 
-export const metadata = {
-  title: "FAQs - QR Studio",
-  description: "Frequently asked questions about QR Studio. Learn about QR code types, customization, analytics, downloads, data security and more.",
+export const metadata: Metadata = {
+  title: "FAQs - QR Studio | Frequently Asked Questions",
+  description: "Frequently asked questions about QR Studio. Learn about QR code types, customization options, scan analytics, download formats, data security and more.",
+  alternates: { canonical: "/faqs" },
 };
 
 const faqCategories = [

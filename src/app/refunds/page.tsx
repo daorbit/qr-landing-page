@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Cancellation & Refund Policy - QR Studio",
-  description: "QR Studio cancellation and refund policy. Understand our refund process for subscription plans.",
+  description: "QR Studio cancellation and refund policy. 7-day money-back guarantee for new subscriptions. Understand our refund process for subscription plans.",
+  alternates: { canonical: "/refunds" },
 };
 
 export default function RefundsPage() {

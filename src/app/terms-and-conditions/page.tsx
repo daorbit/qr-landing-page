@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
-  title: "Terms and Conditions - QR Studio",
-  description: "QR Studio terms and conditions. Read our terms of service for using the QR code generator platform.",
+export const metadata: Metadata = {
+  title: "Terms and Conditions - QR Studio | Terms of Service",
+  description: "QR Studio terms and conditions. Read our terms of service for using the QR code generator platform, account usage, and intellectual property.",
+  alternates: { canonical: "/terms-and-conditions" },
 };
 
 export default function TermsAndConditionsPage() {

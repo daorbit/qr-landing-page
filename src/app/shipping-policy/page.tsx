@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
-  title: "Shipping Policy - QR Studio",
-  description: "QR Studio shipping policy. All products are digital and delivered instantly upon purchase.",
+export const metadata: Metadata = {
+  title: "Shipping Policy - QR Studio | Digital Product Delivery",
+  description: "QR Studio shipping policy. All products are digital and delivered instantly upon purchase. Instant access to QR code generator features.",
+  alternates: { canonical: "/shipping-policy" },
 };
 
 export default function ShippingPolicyPage() {

@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
-  title: "Privacy Policy - QR Studio",
-  description: "QR Studio privacy policy. Learn how we collect, use, and protect your data when using our QR code generator.",
+export const metadata: Metadata = {
+  title: "Privacy Policy - QR Studio | Data Protection & Privacy",
+  description: "QR Studio privacy policy. Learn how we collect, use, and protect your data when using our QR code generator. GDPR compliant.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
