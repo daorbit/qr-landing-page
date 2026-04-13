@@ -1,7 +1,6 @@
 "use client";
 
-import { QrCode, Link as LinkIcon, Phone, Mail, MessageSquare, Wifi, MapPin, Instagram, Facebook, Youtube, MessageCircle, CreditCard, FileText, Crown } from "lucide-react";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { QrCode, Link as LinkIcon, Phone, Mail, MessageSquare, Wifi, MapPin, Camera, ThumbsUp, Play, MessageCircle, CreditCard, FileText, Crown } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const qrTypes = [
@@ -11,9 +10,9 @@ const qrTypes = [
   { icon: <MessageSquare className="h-4 w-4" />, label: "SMS", free: true },
   { icon: <Wifi className="h-4 w-4" />, label: "WiFi", free: false },
   { icon: <MapPin className="h-4 w-4" />, label: "Location", free: false },
-  { icon: <Instagram className="h-4 w-4" />, label: "Instagram", free: false },
-  { icon: <Facebook className="h-4 w-4" />, label: "Facebook", free: false },
-  { icon: <Youtube className="h-4 w-4" />, label: "YouTube", free: false },
+  { icon: <Camera className="h-4 w-4" />, label: "Instagram", free: false },
+  { icon: <ThumbsUp className="h-4 w-4" />, label: "Facebook", free: false },
+  { icon: <Play className="h-4 w-4" />, label: "YouTube", free: false },
   { icon: <MessageCircle className="h-4 w-4" />, label: "WhatsApp", free: false },
   { icon: <CreditCard className="h-4 w-4" />, label: "vCard", free: false },
   { icon: <FileText className="h-4 w-4" />, label: "Text", free: false },
