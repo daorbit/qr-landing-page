@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "FAQs - QR Studio | Frequently Asked Questions",
   description: "Frequently asked questions about QR Studio. Learn about QR code types, customization options, scan analytics, download formats, data security and more.",
   alternates: { canonical: "/faqs" },
+  openGraph: {
+    title: "FAQs - QR Studio | Frequently Asked Questions",
+    description: "Frequently asked questions about QR Studio. Learn about QR code types, customization options, scan analytics, download formats, data security and more.",
+    url: "https://qrstudio.daorbit.in/faqs",
+  },
 };
 
 const faqCategories = [

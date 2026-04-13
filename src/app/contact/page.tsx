@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Contact Us - QR Studio | Get Support & Help",
   description: "Get in touch with QR Studio support. We're here to help with your QR code questions, feedback, and technical issues. Email support available 24/7.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact Us - QR Studio | Get Support & Help",
+    description: "Get in touch with QR Studio support. We're here to help with your QR code questions, feedback, and technical issues.",
+    url: "https://qrstudio.daorbit.in/contact",
+  },
 };
 
 export default function ContactPage() {

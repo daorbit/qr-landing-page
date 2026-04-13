@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Cancellation & Refund Policy - QR Studio",
   description: "QR Studio cancellation and refund policy. 7-day money-back guarantee for new subscriptions. Understand our refund process for subscription plans.",
   alternates: { canonical: "/refunds" },
+  openGraph: {
+    title: "Cancellation & Refund Policy - QR Studio",
+    description: "QR Studio cancellation and refund policy. 7-day money-back guarantee for new subscriptions.",
+    url: "https://qrstudio.daorbit.in/refunds",
+  },
 };
 
 export default function RefundsPage() {

@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Shipping Policy - QR Studio | Digital Product Delivery",
   description: "QR Studio shipping policy. All products are digital and delivered instantly upon purchase. Instant access to QR code generator features.",
   alternates: { canonical: "/shipping-policy" },
+  openGraph: {
+    title: "Shipping Policy - QR Studio | Digital Product Delivery",
+    description: "QR Studio shipping policy. All products are digital and delivered instantly upon purchase.",
+    url: "https://qrstudio.daorbit.in/shipping-policy",
+  },
 };
 
 export default function ShippingPolicyPage() {

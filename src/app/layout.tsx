@@ -47,12 +47,25 @@ export const metadata: Metadata = {
     siteName: "QR Studio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "QR Studio - Free QR Code Generator",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "QR Studio - Free QR Code Generator | Custom Design & Analytics",
     description:
       "Create free custom QR codes for URLs, vCards, WiFi, social media & more. 50+ templates, real-time scan analytics & branding.",
+    images: ["/logo.png"],
+  },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
   robots: {
     index: true,
