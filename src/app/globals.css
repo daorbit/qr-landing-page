@@ -91,3 +91,7 @@ input, textarea, select {
 .animate-fade-in {
   animation: fade-in 0.3s ease-out;
 }
+
+a, button, [role="button"], input[type="submit"], input[type="button"], select, label[for], [onclick] {
+  cursor: pointer;
+}
