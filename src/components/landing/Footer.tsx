@@ -20,7 +20,10 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[10px]">
+          <nav
+            aria-label="Footer navigation"
+            className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[10px]"
+          >
             <a
               href="#features"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -39,12 +42,7 @@ const Footer = () => {
             >
               Privacy Policy
             </Link>
-            <Link
-              href="/faqs"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              FAQs
-            </Link>
+
             <Link
               href="/terms-and-conditions"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -52,7 +50,8 @@ const Footer = () => {
               Terms of Service
             </Link>
             <Link
-              href="/contact"
+              href="https://qrstudio.daorbit.in/contact"
+              target="_blank"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact Us

@@ -2,17 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useTheme } from "next-themes";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { APP_URL } from "@/lib/config";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
-
-  const toggleTheme = () => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark");
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/95 backdrop-blur-md">
@@ -33,9 +27,6 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-2">
-            <button onClick={toggleTheme} className="text-xs h-8 w-8 p-0 inline-flex items-center justify-center rounded-md hover:bg-muted transition-colors">
-              {resolvedTheme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </button>
             <a href={`${APP_URL}/sign-in`}>
               <button className="text-xs h-8 px-3 rounded-md hover:bg-muted transition-colors">Sign In</button>
             </a>
@@ -57,9 +48,6 @@ const Header = () => {
               <a href="#analytics" onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 hover:bg-muted rounded-lg transition-colors text-xs">Analytics</a>
               <Link href="/faqs" onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 hover:bg-muted rounded-lg transition-colors text-xs">FAQs</Link>
               <div className="flex gap-2 px-3 pt-3">
-                <button onClick={toggleTheme} className="w-10 h-8 p-0 inline-flex items-center justify-center border border-border rounded-md hover:bg-muted">
-                  {resolvedTheme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-                </button>
                 <a href={`${APP_URL}/sign-in`} className="flex-1">
                   <button className="w-full text-xs h-8 border border-border rounded-md hover:bg-muted transition-colors">Sign In</button>
                 </a>
