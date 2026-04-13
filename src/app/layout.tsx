@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   authors: [{ name: "QR Studio", url: "https://qrstudio.daorbit.in" }],
   creator: "QR Studio",
   publisher: "DA Orbit",
+  verification: {
+    google: "wCg2_rOJMCFoJRSuWd_x8spig7D6hWP1ueGxu0erNi0",
+  },
   metadataBase: new URL("https://qrstudio.daorbit.in"),
   alternates: {
     canonical: "/",
